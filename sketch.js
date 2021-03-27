@@ -12,7 +12,8 @@ var animationFinishPoint = 0;
 
 function setup() 
 {
-    createCanvas(CanvasSize, CanvasSize);
+    let cnv = createCanvas(CanvasSize, CanvasSize);
+    cnv.id("canvas"); 
     Start = false;
     Slider = document.getElementById("frameRateSlider");
     SliderText = document.getElementById("frameRateSliderText");
