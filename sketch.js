@@ -101,7 +101,7 @@ function draw()
                         Timer[1] = 0;
                         Timer[2]++;
                     }
-                    let temp = "Time Eleapsed: ";
+                    let temp = "Time: ";
                     if (Timer[2] <= 9) 
                     {
                         temp = temp.concat("0" + Timer[2] + ":");
