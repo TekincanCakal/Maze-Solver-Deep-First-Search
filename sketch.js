@@ -14,6 +14,7 @@ function setup()
 {
     let cnv = createCanvas(CanvasSize, CanvasSize);
     cnv.id("canvas"); 
+    cnv.center();
     Start = false;
     Slider = document.getElementById("frameRateSlider");
     SliderText = document.getElementById("frameRateSliderText");
