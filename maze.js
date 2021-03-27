@@ -52,9 +52,9 @@ class Maze
         }
         if(isVisited)
         {
-           noStroke();
+            noStroke();
             fill(255, 0, 255, 100);
-           rect(x, y, this.BoxSize, this.BoxSize);
+            rect(x, y, this.BoxSize, this.BoxSize);
         }
     }
     showCurrentPlayer()

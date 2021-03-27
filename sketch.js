@@ -61,15 +61,21 @@ function draw()
         });
         if (!this.MazeGame.CurrentPlayer) 
         {
-            if (animationFinishPoint > this.FinishedPlayers[0].Path.length - 1) 
+            if (animationFinishPoint <= this.FinishedPlayers[0].Path.length - 1) 
             {
-                animationFinishPoint = this.FinishedPlayers[0].Path.length - 1;
+                for (let i = 0; i <= animationFinishPoint; i++) 
+                {
+                    this.MazeGame.showCell(this.MazeGame.Grid[this.MazeGame.index(this.FinishedPlayers[0].Path[i])], true);
+                }
+                animationFinishPoint++;
             }
-            for (let i = 0; i <= animationFinishPoint; i++) 
+            else
             {
-                this.MazeGame.showCell(this.MazeGame.Grid[this.MazeGame.index(this.FinishedPlayers[0].Path[i])], true);
+                for (let i = 0; i <= animationFinishPoint; i++) 
+                {
+                    this.MazeGame.showCell(this.MazeGame.Grid[this.MazeGame.index(this.FinishedPlayers[0].Path[i])], true);
+                }
             }
-            animationFinishPoint++;
             StartButton.disabled = true;
         }
         else 
