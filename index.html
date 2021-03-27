@@ -7,26 +7,30 @@
 </head>
 
 <body>
-    <br>    
-    <div>
-        <input type="file" name="inputfile" id="inputfile" accept=".txt"/>
-    </div>
-    <br>
-    <div>
-        <span style="font-size: 32px;" id="timerText">Time: 00:00:00</span>
-    </div>
-    <br>
-    <div>
-        <span id="frameRateSliderText"></span>
+    <center>
+        <br>    
         <div>
-            <input type="range" min="1" max="60" value="60" class="slider" id="frameRateSlider">
+            <input type="file" name="inputfile" id="inputfile" accept=".txt"/>
         </div>
-    </div>
-    <br>
-    <div>
-        <button onclick="startStop()" id="startButton" disabled>Start</button>
-    </div>
-    <br>
+        <br>
+        <div>
+            <span style="font-size: 32px;" id="timerText">Time: 00:00:00</span>
+        </div>
+        <br>
+        <div>
+            <span id="frameRateSliderText"></span>
+            <div>
+                <input type="range" min="1" max="60" value="60" class="slider" id="frameRateSlider">
+            </div>
+        </div>
+        <br>
+        <div>
+            <button onclick="startStop()" id="startButton" disabled>Start</button>
+        </div>
+        <div id = "canvas">
+        </div>
+        <br>
+    <center>
 </body>
 
 </html>
